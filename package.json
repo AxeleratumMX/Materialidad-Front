@@ -1,0 +1,72 @@
+{
+  "name": "american_tower",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^2.0.3",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/system": "^4.9.14",
+    "@tinymce/tinymce-react": "^3.6.0",
+    "axios": "^0.19.2",
+    "fetch-readablestream": "^0.2.0",
+    "history": "^5.0.0",
+    "html2canvas": "^1.0.0-rc.7",
+    "html2pdf.js": "^0.9.2",
+    "jspdf": "^2.1.0",
+    "jszip": "^3.5.0",
+    "lodash": "^4.17.19",
+    "mustache": "^4.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-js-pagination": "^3.0.3",
+    "react-paginate": "^6.3.2",
+    "react-papaparse": "^3.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "react-toastify": "^5.5.0",
+    "save-as": "^0.1.8",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-react": "^0.88.2"
+  },
+  "proxy": "http://bienesraicesbackend.southcentralus.cloudapp.azure.com:8762",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js ./src"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@jest/globals": "^26.2.0",
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/user-event": "^12.1.0",
+    "babel-eslint": "^10.1.0",
+    "canvas": "^2.6.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.20.5",
+    "jest": "^24.9.0",
+    "jest-canvas-mock": "^2.2.0"
+  }
+}
