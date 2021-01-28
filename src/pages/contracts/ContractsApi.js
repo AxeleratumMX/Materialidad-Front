@@ -101,7 +101,7 @@ export default class ContractsApi {
 
         return contract;
     }
-
+git 
     static async findAllPaged(size, page, sortedBy, order) {
         const sortColumn = sortedBy ? sortedBy : 'lastModifiedDate';
         const sortType = order ? order : 'desc';
@@ -109,7 +109,7 @@ export default class ContractsApi {
         const params = {
             size: size,
             page: page,
-            sort: ''+sortColumn+','+sortType,
+            sort: ''+sortColumn+','+sortType, 
         };
 
         return await Axios.get(this.URL, {params})
