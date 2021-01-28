@@ -152,7 +152,8 @@ const Contracts = (props) => {
                                     <TableRow style={style.tableTitles}>
                                         <TableCell align='right'><h4>Código de propiedad</h4></TableCell>
                                         <TableCell><h4>Cliente</h4></TableCell>
-                                        <TableCell><h4>Tipo Contrato</h4></TableCell>
+                                        <TableCell><h4>Nombre Contrato</h4></TableCell>
+                                       <TableCell><h4>Tipo Contrato</h4></TableCell>
                                         <TableCell><h4>Subtipo de Contrato</h4></TableCell>
                                         <TableCell><h4>Estatus</h4></TableCell>
                                         <TableCell align='center'><h4>Trazabilidad</h4></TableCell>
@@ -165,7 +166,8 @@ const Contracts = (props) => {
                                         <TableRow key={contract.id} style={index % 2 === 0 ? style.darkRow : undefined}>
                                             <TableCell align='right'>{contract.idActivo}</TableCell>
                                             <TableCell>{contract.client}</TableCell>
-                                            <TableCell>{contract.tipoContrato}</TableCell>
+                                            <TableCell>{contract.name}</TableCell>
+                                           <TableCell>{contract.tipoContrato === "FIDEICOMISOADMINISTRACION" ? "FIDEICOMISO ADMINISTRACION": contract.tipoContrato }</TableCell>
                                             <TableCell>{contract.abstractType}</TableCell>
                                             <TableCell>
                                                 {contract.status ? contract.status.value : contract.estado}

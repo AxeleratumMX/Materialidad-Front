@@ -1,3 +1,5 @@
+
+ 
 import React from 'react';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -96,6 +98,13 @@ const CreateContractDialog = (props) => {
         setAssetNumber(event.target.value);
     };
 
+console.log("templateOptions",templateOptions)
+console.log("templateOptionsFiltered",templateOptionsFiltered)
+console.log("template",template)
+console.log("client",client)
+
+console.log("contractType",contractType)
+console.log("assetNumber",assetNumber)
 
     return (
         <Dialog fullScreen={fullScreen}
@@ -178,3 +187,4 @@ CreateContractDialog.propTypes = {
 };
 
 export default CreateContractDialog;
+

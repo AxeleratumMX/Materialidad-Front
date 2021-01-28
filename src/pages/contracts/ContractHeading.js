@@ -43,7 +43,7 @@ const ContractHeading = (props) => {
                             props.contract.templateInstance._status.value : props.contract.templateInstance.estado}
                         </b></Grid>
 
-                        <Grid item>Tipo de contrato: <b>{props.contract.templateInstance.tipoContrato}</b></Grid>
+                       <Grid item>Tipo de contrato: <b>{props.contract.templateInstance.tipoContrato}</b></Grid>
 
                         {abstractType && <Grid item>Tipo de cliente: <b>{abstractType.description}</b></Grid>}
 

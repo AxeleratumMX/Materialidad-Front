@@ -22,7 +22,7 @@ const LeaseTypeSelect = ({onError = ()=>{}, ...props}) => {
             {...props}
             options={options ? options : []}
             loading={!options}
-            label="Tipo de inmueble"
+            label="Tipo de fideicomiso"
             onError={props.onError}
             getOptionLabel={(option) => option.description}
             getOptionSelected={(option, value) => option.key === value.key}

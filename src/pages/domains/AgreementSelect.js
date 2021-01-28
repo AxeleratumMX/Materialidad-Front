@@ -22,7 +22,7 @@ const AgreementSelect = ({onError = ()=>{}, ...props}) => {
             {...props}
             options={options ? options : []}
             loading={!options}
-            label="Tipo de fiador"
+            label="Tipo de documento"
             onError={props.onError}
             getOptionLabel={(option) => option.description}
             getOptionSelected={(option, value) => option.key === value.key}

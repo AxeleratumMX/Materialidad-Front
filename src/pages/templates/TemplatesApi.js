@@ -33,8 +33,8 @@ export default class TemplatesApi {
 
     static _mapType(type) {
         switch (type) {
-        case 'HABITACIONAL': return 'habitacional';
-        case 'COMERCIAL': return 'comercial';
+        case 'FIDEICOMISO': return 'fideicomiso';
+        case 'FIDEICOMISOADMINISTRACION': return 'fideicomisoadministracion';
         default: throw new Error('TemplatesApi - mapType: invalid type '+type);
         }
     }

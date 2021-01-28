@@ -1,3 +1,4 @@
+ 
 import React, {Fragment} from 'react';
 import PdfDocument from './PdfDocument';
 import SectionDialog from './SectionDialog';
@@ -275,7 +276,6 @@ export default class Contract extends React.Component {
                 marginRight: '15px',
             },
         };
-
         return (
             <div>
                 {this.state.errorMessage &&
@@ -391,3 +391,4 @@ Contract.propTypes = {
     match: PropTypes.object,
     history: PropTypes.object,
 };
+

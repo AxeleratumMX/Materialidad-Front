@@ -22,7 +22,7 @@ const AbstractTypeSelect = ({onError = ()=>{}, ...props}) => {
             {...props}
             options={options ? options : []}
             loading={!options}
-            label="Tipo de cliente"
+            label="Tipo de Fiduciario"
             onError={props.onError}
             getOptionLabel={(option) => option.description}
             getOptionSelected={(option, value) => option.key === value.key}

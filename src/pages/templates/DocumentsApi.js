@@ -7,21 +7,23 @@ export default class DocumentsApi {
             margin: 1,
             filename: fileName && fileName !== '' ? fileName + '.pdf' : 'Document.pdf',
             image: {type: 'jpeg', quality: 1},
-            html2canvas: {scale: 2},
-            jsPDF: {unit: 'in', format: 'a4', orientation: 'portrait'},
+            html2canvas: {scale: 2,imageTimeout: 0},
+            jsPDF: {unit: 'in', format: 'a4', orientation: 'portrait',compress:true},
             pagebreak: {mode: ['avoid-all', 'css', 'legacy']},
         };
     }
 
     static buildPdf(template, fileName) {
+        console.log("data pdf",fileName)
+        console.log("data template",template)
+
         const html = this.buildHtml(template);
-        return html2pdf().from(html).set(this._pdfOptions(fileName));
+        return html2pdf().from(html).set(this._pdfOptions("CibancoFideicomiso2_"+template.name));
     }
 
     static buildMultiplePdf(templates, fileName) {
         const pages = templates.map((template) => this.buildHtml(template));
         const options = this._pdfOptions(fileName);
-
         // build the document template by template because all at once fails
         let worker = html2pdf().from(pages[0]).set(options).toPdf();
         pages.slice(1).forEach((page) => {

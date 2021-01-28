@@ -9,8 +9,9 @@ const ContractTypeSelect = (props) => {
                     className="formInput"
                     {...props}>
                     <option/>
-                    <option key='HABITACIONAL' value='HABITACIONAL'>Habitacional</option>
-                    <option key='COMERCIAL' value='COMERCIAL'>Comercial</option>
+                    <option key='FIDEICOMISO' value='FIDEICOMISO'>Fideicomiso</option>
+                    <option key='FIDEICOMISOADMINISTRACION' value='FIDEICOMISOADMINISTRACION'>Fideicomiso Administración</option>
+
                 </select>
             </div>
         </Fragment>

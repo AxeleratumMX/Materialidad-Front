@@ -102,6 +102,8 @@ const Templates = (props) => {
         populate(page.selected);
     };
 
+    console.log("TEMPLATES",templates)
+
     return (
         <Fragment>
             {errorMessage &&
@@ -144,9 +146,9 @@ const Templates = (props) => {
                                     <TableRow style={style.tableTitles}>
                                         <TableCell><h4>Nombre</h4></TableCell>
                                         <TableCell><h4>Cliente</h4></TableCell>
-                                        <TableCell><h4>Tipo</h4></TableCell>
-                                        <TableCell><h4>Abstract Type</h4></TableCell>
-                                        <TableCell><h4>Lease Type</h4></TableCell>
+                                       <TableCell><h4>Tipo</h4></TableCell>
+                                        <TableCell><h4>Tipo de Fiduciario</h4></TableCell>
+                                        <TableCell><h4>Tipo de Fideicomiso</h4></TableCell>
                                         <TableCell align='center'><h4>Ver</h4></TableCell>
                                         <TableCell align='center'><h4>Descargar</h4></TableCell>
                                     </TableRow>
@@ -157,7 +159,7 @@ const Templates = (props) => {
                                             style={index % 2 === 0 ? style.darkRow : undefined}>
                                             <TableCell>{template.name}</TableCell>
                                             <TableCell>{template.client}</TableCell>
-                                            <TableCell>{template.tipoContrato}</TableCell>
+                                            <TableCell>{template.tipoContrato === "FIDEICOMISOADMINISTRACION" ? "FIDEICOMISO ADMINISTRACION": template.tipoContrato }</TableCell>
                                             <TableCell>{template.abstractType}</TableCell>
                                             <TableCell>{template.leaseType}</TableCell>
                                             <TableCell style={style.iconRow} align='center'>

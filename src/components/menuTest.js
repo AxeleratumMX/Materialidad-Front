@@ -8,8 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import IconMenu from '../assets/menu.svg';
 import MenuItem from '@material-ui/core/MenuItem';
 import {Link} from 'react-router-dom';
-import LogoAt from '../images/logo.svg';
-
+import LogoAt from '../images/logo-cibanco.png';
 import Contract from '@material-ui/icons/DescriptionTwoTone';
 import AddUser from '@material-ui/icons/PersonAddTwoTone';
 import History from '@material-ui/icons/HistoryTwoTone';
@@ -25,7 +24,7 @@ const useStyles = makeStyles({
         backgroundColor: '#F4F3F3',
     },
     fullList: {
-        width: 'auto',
+        width: 100,
         backgroundColor: '#F4F3F3',
 
 
@@ -51,15 +50,13 @@ export default function TemporaryDrawer() {
 
     const list = (anchor) => (
         <div
-            className={clsx(classes.list, {
-                [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-            })}
+            className={clsx(classes.list)}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <List>
-                <div style={{height: '100%', filter: 'invert(100%)',
+            <List className={clsx(classes.list)}>
+                <div style={{height: '100%', 
                 }} className="ui right">
                     <img src={LogoAt} style={{marginLeft: '9rem', width: '100px'}} alt="Logo"/>
 

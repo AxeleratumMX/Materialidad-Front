@@ -317,7 +317,7 @@ export default class Inbox extends React.Component {
                                         <th style={style.title}><h4>Estado</h4></th>
                                         <th style={style.title}><h4>Cliente</h4></th>
                                         <th style={style.title}><h4>Tipo de contracto</h4></th>
-                                        <th style={style.titleS}><h4>Código de propiedad</h4></th>
+                                        <th style={style.title}><h4>Código de propiedad</h4></th>
                                         <th style={style.title}><h4>Folio</h4></th>
                                         <th style={style.title}><h4>Fecha</h4></th>
                                         <th style={style.title}><h4>Observaciones</h4></th>

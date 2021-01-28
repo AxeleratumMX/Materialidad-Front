@@ -119,6 +119,7 @@ export default class ContractsApi {
     static savePdf(contractId) {
         this.find(contractId).then((contract) =>
             DocumentsApi.buildPdf(
+                
                 contract.templateInstance,
                 this.pdfName(contract.id)).save(),
         );

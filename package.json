@@ -30,7 +30,7 @@
     "semantic-ui": "^2.4.2",
     "semantic-ui-react": "^0.88.2"
   },
-  "proxy": "http://bienesraicesbackend.southcentralus.cloudapp.azure.com:8762",
+  "proxy": "http://bienesraices.southcentralus.cloudapp.azure.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

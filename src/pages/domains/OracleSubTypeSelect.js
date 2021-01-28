@@ -28,7 +28,7 @@ const OracleTypeSelect = ({onError = ()=>{}, oracleTypeKey, ...props}) => {
             {...props}
             options={options ? options : []}
             loading={loading}
-            label="Subtipo de contrato"
+            label="Subtipo de fideicomiso"
             onError={props.onError}
             getOptionLabel={(option) => option.description}
             getOptionSelected={(option, value) => option.key === value.key}

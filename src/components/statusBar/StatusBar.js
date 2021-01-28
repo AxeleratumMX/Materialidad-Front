@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import LogoAt from '../../images/logo.svg';
+import LogoAt from '../../images/logo-cibanco.png';
 import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import IconAlert from '../../assets/icoo-alerta.svg';
@@ -36,7 +36,8 @@ const StatusBar = (props) => {
             height: '80px',
             padding: '15px',
             margin: 0,
-            backgroundColor: '#129ac4',
+            backgroundColor: '#007836',//gb(18, 154, 196)  '#007836'
+            borderBottom: '3px solid #616161',
             minWidth: '400px',
         },
         logo: {

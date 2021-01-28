@@ -26,7 +26,7 @@ const AssetNumberSelect = ({contractType, ...props}) => {
 
     return (
         <Fragment>
-            <label className="formInputLabel">Código de Propiedad</label>
+            <label className="formInputLabel">Código de Cliente</label>
             <div style={{display: 'flex'}} className="ui action input">
                 <select id='contractType'
                     className="formInput"
