@@ -5,10 +5,10 @@ import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import IconMenu from '../assets/menu.svg';
+import IconMenu from '../images/meenu.svg';
 import MenuItem from '@material-ui/core/MenuItem';
 import {Link} from 'react-router-dom';
-import LogoAt from '../images/logo-cibanco.png';
+import LogoAt from '../images/logo-city.svg';
 import Contract from '@material-ui/icons/DescriptionTwoTone';
 import AddUser from '@material-ui/icons/PersonAddTwoTone';
 import History from '@material-ui/icons/HistoryTwoTone';
@@ -58,7 +58,7 @@ export default function TemporaryDrawer() {
             <List className={clsx(classes.list)}>
                 <div style={{height: '100%', 
                 }} className="ui right">
-                    <img src={LogoAt} style={{marginLeft: '9rem', width: '100px'}} alt="Logo"/>
+                    <img src={LogoAt} style={{marginLeft: '9rem', width: '100px',filter: 'invert(70%)'}} alt="Logo"/>
 
                 </div>
 

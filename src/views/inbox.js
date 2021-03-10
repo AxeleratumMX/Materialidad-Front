@@ -316,8 +316,8 @@ export default class Inbox extends React.Component {
                                     <tr>
                                         <th style={style.title}><h4>Estado</h4></th>
                                         <th style={style.title}><h4>Cliente</h4></th>
-                                        <th style={style.title}><h4>Tipo de contracto</h4></th>
-                                        <th style={style.title}><h4>Código de propiedad</h4></th>
+                                        {/*<th style={style.title}><h4>Tipo de Fideicomiso</h4></th>*/}
+                                        <th style={style.title}><h4>Código de Cliente</h4></th>
                                         <th style={style.title}><h4>Folio</h4></th>
                                         <th style={style.title}><h4>Fecha</h4></th>
                                         <th style={style.title}><h4>Observaciones</h4></th>
@@ -364,7 +364,7 @@ export default class Inbox extends React.Component {
             text: {
                 width: '90px', height: '60px', padding: '2px 2px', fontSize: '10pt', textAlign: 'center',
             }, textCustom: {
-                width: 'auto', height: '60px', padding: '2px 2px', fontSize: '10pt', textAlign: 'justify',
+                width: 'auto', height: '60px', padding: '2px 2px', fontSize: '10pt', textAlign: 'center',
             }, icon: {
                 width: '90px', height: '60px', padding: '2px', fontSize: '10pt', textAlign: 'center',
             },
@@ -380,7 +380,7 @@ export default class Inbox extends React.Component {
                         <tr>
                             <td style={style.text}>{pd.contractStatus}</td>
                             <td style={style.textCustom}>{pd.cliente}</td>
-                            <td style={style.text}>{pd.tipoContrato}</td>
+                          {/*  <td style={style.text}>{pd.tipoContrato}</td>*/}
                             <td style={style.text}>{pd.assetNumber}</td>
                             <td style={style.text}>{pd.folio}</td>
                             <td style={style.text}>{this.formatDate(pd.fecha)}</td>
@@ -430,8 +430,8 @@ export default class Inbox extends React.Component {
                         <tr>
                             <td style={style.text}>{pd.contractStatus}</td>
                             <td style={style.textCustom}>{pd.cliente}</td>
-                            <td style={style.text}>{pd.tipoContrato}</td>
-                            <td style={style.text}>{pd.assetNumber}</td>
+                          {/*  <td style={style.text}>{pd.tipoContrato}</td>*/}
+                          <td style={style.text}>{pd.assetNumber}</td>
                             <td style={style.text}>{pd.folio}</td>
                             <td style={style.text}>{this.formatDate(pd.fecha)}</td>
                             <td style={style.icon}>
@@ -490,8 +490,8 @@ export default class Inbox extends React.Component {
                     <tr>
                         <td style={style.text}>{pd.contractStatus}</td>
                         <td style={style.textCustom}>{pd.cliente}</td>
-                        <td style={style.text}>{pd.tipoContrato}</td>
-                        <td style={style.text}>{pd.assetNumber}</td>
+                          {/*  <td style={style.text}>{pd.tipoContrato}</td>*/}
+                          <td style={style.text}>{pd.assetNumber}</td>
                         <td style={style.text}>{pd.folio}</td>
                         <td style={style.text}>{this.formatDate(pd.fecha)}</td>
                         <td style={style.icon}>
@@ -770,7 +770,7 @@ export default class Inbox extends React.Component {
                                     </div>:
                                     <React.Fragment>
                                         {
-                                            arrayObservaciones.map((obs, idx) => {
+                                        arrayObservaciones && !arrayObservaciones.length ?  arrayObservaciones.map((obs, idx) => {
                                                 return <div key={idx} >
                                                     {
                                                         <React.Fragment>
@@ -796,7 +796,7 @@ export default class Inbox extends React.Component {
                                                         </React.Fragment>
                                                     }
                                                 </div>;
-                                            })
+                                            }) : ""
                                         }
                                     </React.Fragment>
                                 }

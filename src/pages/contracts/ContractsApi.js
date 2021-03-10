@@ -100,8 +100,7 @@ export default class ContractsApi {
             });
 
         return contract;
-    }
-git 
+    } 
     static async findAllPaged(size, page, sortedBy, order) {
         const sortColumn = sortedBy ? sortedBy : 'lastModifiedDate';
         const sortType = order ? order : 'desc';

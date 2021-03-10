@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/logo-cibanco-vector.svg';
+import Logo from '../images/logo2.svg';
 import AuthApi from './AuthApi';
 import PropTypes from 'prop-types';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -136,7 +136,7 @@ const Login = (props) => {
                         </div> : null}
 
                         <button className="ui fluid primary submit button"
-                            style={{marginTop: '20px',backgroundColor:'#007836'}}
+                            style={{marginTop: '20px',backgroundColor:'#044f9d'}}
                             type="submit"
                             id="loginBtn"
                             onClick={handleLogin}

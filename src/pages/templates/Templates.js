@@ -144,11 +144,11 @@ const Templates = (props) => {
                             <Table>
                                 <TableHead>
                                     <TableRow style={style.tableTitles}>
-                                        <TableCell><h4>Nombre</h4></TableCell>
-                                        <TableCell><h4>Cliente</h4></TableCell>
-                                       <TableCell><h4>Tipo</h4></TableCell>
-                                        <TableCell><h4>Tipo de Fiduciario</h4></TableCell>
-                                        <TableCell><h4>Tipo de Fideicomiso</h4></TableCell>
+                                        <TableCell align='center'><h4>Nombre</h4></TableCell>
+                                        <TableCell align='center'><h4>Cliente</h4></TableCell>
+                                       <TableCell align='center'><h4>Tipo</h4></TableCell>
+                                        <TableCell align='center'><h4>Tipo de Fiduciario</h4></TableCell>
+                                        <TableCell align='center'> <h4>Tipo de Fideicomiso</h4></TableCell>
                                         <TableCell align='center'><h4>Ver</h4></TableCell>
                                         <TableCell align='center'><h4>Descargar</h4></TableCell>
                                     </TableRow>
@@ -157,11 +157,11 @@ const Templates = (props) => {
                                     {templatesFiltered.map((template, index) =>
                                         <TableRow key={template.idTemplate}
                                             style={index % 2 === 0 ? style.darkRow : undefined}>
-                                            <TableCell>{template.name}</TableCell>
-                                            <TableCell>{template.client}</TableCell>
-                                            <TableCell>{template.tipoContrato === "FIDEICOMISOADMINISTRACION" ? "FIDEICOMISO ADMINISTRACION": template.tipoContrato }</TableCell>
-                                            <TableCell>{template.abstractType}</TableCell>
-                                            <TableCell>{template.leaseType}</TableCell>
+                                            <TableCell align='center'>{template.name}</TableCell>
+                                            <TableCell align='center'>{template.client}</TableCell>
+                                            <TableCell align='center'>{template.tipoContrato === "FIDEICOMISOADMINISTRACION" ? "FIDEICOMISO ADMINISTRACION": template.tipoContrato }</TableCell>
+                                            <TableCell align='center'>{template.abstractType}</TableCell>
+                                            <TableCell align='center'>{template.leaseType}</TableCell>
                                             <TableCell style={style.iconRow} align='center'>
                                                 <IconButton style={style.iconButton}
                                                     onClick={() => handleViewTemplate(template)}>

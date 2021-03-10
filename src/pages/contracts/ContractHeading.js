@@ -37,7 +37,7 @@ const ContractHeading = (props) => {
                             props.contract.templateInstance._client.nombre : props.contract.templateInstance.clientId}
                         </b></Grid>
 
-                        <Grid item>Código de Propiedad:<b>{props.contract.templateInstance.idActivo}</b></Grid>
+                        <Grid item>Código de Cliente:<b>{props.contract.templateInstance.idActivo}</b></Grid>
 
                         <Grid item>Estado: <b>{props.contract.templateInstance._status ?
                             props.contract.templateInstance._status.value : props.contract.templateInstance.estado}
@@ -47,7 +47,7 @@ const ContractHeading = (props) => {
 
                         {abstractType && <Grid item>Tipo de cliente: <b>{abstractType.description}</b></Grid>}
 
-                        {leaseType && <Grid item>Tipo de inmueble: <b>{leaseType.description}</b></Grid>}
+                        {leaseType && <Grid item>Tipo de Fideicomiso: <b>{leaseType.description}</b></Grid>}
 
                         <Grid item>Plantilla: <b>{props.contract.templateInstance.name}</b></Grid>
 
